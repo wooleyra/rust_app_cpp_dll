@@ -1,0 +1,1 @@
+CALL .\out\rust_app_cpp_dll.exe
