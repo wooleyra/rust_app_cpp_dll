@@ -1,0 +1,29 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Build Rust project",
+			"type": "shell",
+			"command": ".\\build.bat",
+			"options": {
+				"cwd": ".\\rust_app"
+			},
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"dependsOn": [
+				"Build C++ project"
+			]
+		},
+		{
+			"label": "Build C++ project",
+			"type": "shell",
+			"options": {
+				"cwd": ".\\cpp_dll"
+			},
+			"group": "build",
+			"command": ".\\build.bat"
+		}
+	]
+}
