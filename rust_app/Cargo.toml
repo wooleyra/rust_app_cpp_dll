@@ -8,10 +8,3 @@ edition = "2018"
 
 [dependencies]
 libc = "*"
-
-#[target.i686-pc-windows-msvc.cpplib]
-#rustc-link-lib = ["cpplib"]
-#rustc-link-search = ["../cpp_dll/bin/"]
-
-#[build]
-#target = "i686-pc-windows-msvc"
